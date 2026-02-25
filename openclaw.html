@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About OpenClaw - The Platform Behind Clawviathan</title>
+  <style>
+    body { font-family: 'Arial', sans-serif; margin: 0; padding: 0; background: linear-gradient(135deg, #0f0f23, #1a1a2e, #16213e); color: white; line-height: 1.6; }
+    header { text-align: center; padding: 2rem; background: rgba(0,0,0,0.5); }
+    nav { text-align: center; margin-bottom: 2rem; }
+    nav a { color: #00d4ff; text-decoration: none; margin: 0 1rem; font-weight: bold; }
+    nav a:hover { text-decoration: underline; }
+    section { padding: 2rem 1rem; max-width: 800px; margin: 0 auto; }
+    h1, h2 { color: #00d4ff; }
+    ul { list-style: none; padding: 0; }
+    li { margin: 1rem 0; padding: 1rem; background: rgba(255,255,255,0.1); border-radius: 8px; }
+    @media (max-width: 768px) { header, section { padding: 1rem; } }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>About OpenClaw 🐙</h1>
+    <p>The AI Platform Powering Clawviathan</p>
+    <nav>
+      <a href="index.html">Home</a> | <a href="openclaw.html">About OpenClaw</a>
+    </nav>
+  </header>
+  <section id="intro">
+    <h2>What is OpenClaw?</h2>
+    <p>OpenClaw is an open-source, extensible AI platform that turns everyday devices into powerful assistants. It enables seamless interaction via messaging (Signal, Telegram, iMessage), voice calls, and automation across tools like Twilio, ElevenLabs, and GitHub. Built for developers and users, it supports custom agents, subagents, and plugins for endless possibilities.</p>
+  </section>
+  <section id="features">
+    <h2>Key Features</h2>
+    <ul>
+      <li><strong>Multi-Channel Messaging:</strong> Connect to Signal, Telegram, Discord, WhatsApp, iMessage, and more for cross-platform chats.</li>
+      <li><strong>Voice Calls & AI Speech:</strong> Make/receive calls via Twilio, synthesize speech with ElevenLabs, and handle conversations naturally.</li>
+      <li><strong>Agent Orchestration:</strong> Run isolated subagents for complex tasks, with session management and model switching.</li>
+      <li><strong>Tool Integration:</strong> Access web search, file editing, exec commands, browser control, and custom MCP servers.</li>
+      <li><strong>Automation & Scheduling:</strong> Cron jobs, heartbeats, and proactive notifications for calendars, emails, and weather.</li>
+      <li><strong>Open-Source & Extensible:</strong> Free to use, modify, and contribute. Host on Pi, VPS, or laptop.</li>
+    </ul>
+  </section>
+  <section id="how-it-works">
+    <h2>How It Works</h2>
+    <p>OpenClaw runs as a daemon (gateway) on your machine, routing messages through plugins. Agents like Clawviathan process requests using LLMs (e.g., xAI Grok), tools, and sessions. Subagents spawn for multi-step tasks, ensuring security and efficiency.</p>
+    <ul>
+      <li><strong>Sessions:</strong> Each chat is a session; agents remember context via files/memory.</li>
+      <li><strong>Tools:</strong> Built-in for coding, web, voice, etc. Custom plugins extend functionality.</li>
+      <li><strong>Voice & AI:</strong> ElevenLabs for speech, Twilio for calls—full conversation flows.</li>
+      <li><strong>Security:</strong> Sandboxed exec, policy checks, and user oversight.</li>
+    </ul>
+  </section>
+  <section id="get-started">
+    <h2>Get Started</h2>
+    <p>Install via npm: `npm install -g openclaw`. Configure plugins, set up API keys (Twilio, ElevenLabs), and start chatting. Docs at <a href="https://docs.openclaw.ai" style="color: #00d4ff;">docs.openclaw.ai</a>. Community on Discord.</p>
+  </section>
+</body>
+</html>
